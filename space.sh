@@ -3,7 +3,7 @@
 # Print out how much storage space is used and percent available
 
 get_disk_info() {
-    df -h | grep "$1"
+    df -h | grep "$1" -m 1
 }
 
 get_size() {
